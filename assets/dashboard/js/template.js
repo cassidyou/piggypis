@@ -86,4 +86,19 @@
       } 
     });  
   });
+
+  $(".btn-pill").children("a").addClass("side-text");
+
+
+ $(".btn-pill").click(function(){
+  let textColor = $(this).children("a").css("color");
+  $(this).css("background-color", textColor);
+
+
+  $(".btn-pill").not(this).css("background-color", "transparent");
+  $(this).children("a").addClass("btn-pill-link");
+
+  $(".btn-pill").not(this).children("a").removeClass("btn-pill-link");
+ })
+   
 })(jQuery);

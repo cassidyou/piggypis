@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Piggypis -  Savings</title>
+
+  <link rel="stylesheet" href="./assets/dashboard/css/all.min.css">
+  <link rel="stylesheet" href="./assets/dashboard/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./assets/dashboard/css/vendor.bundle.base.css">
+
+  <link rel="stylesheet" href="./assets/dashboard/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller d-flex" style="height: 100vh;position: relative;">
+    <!-- partial:./partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas active" id="sidebar">
+      <ul class="nav" id="sidebar-nav">
+        <li class="nav-item sidebar-category mb-4 d-none d-lg-block">
+          <a href="index.html">
+            <p class="h1 fs-1 ">Piggypis</p> 
+          </a>
+        
+          <span></span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="dashboard.html">
+            <i class="fa fa-home h4 mr-3 "></i>
+          <span class="menu-title  px-2 py-1 rounded">Dashboard</span>
+          </a>
+        </li>
+        
+    
+        <li class="nav-item">
+          <a class="nav-link" href="savings.html">
+            <i class="fa fa-wallet h4 mr-3"></i>
+            <span class="menu-title side-text bg-light px-2 py-1 rounded">Savings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/charts/chartjs.html">
+            <i class="fa fa-briefcase h4 mr-3"></i>
+            <span class="menu-title">Investment</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/tables/basic-table.html">
+            <i class="fa fa-user h4 mr-3"></i>
+            <span class="menu-title">Account</span>
+          </a>
+        </li>
+        <li class="nav-item my-5 py-5 d-none d-lg-block"></li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link" href="pages/tables/basic-table.html">
+            <i class="fa fa-sign-out-alt h4 mr-3"></i>
+            <span class="menu-title">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper" style="overflow-y: scroll;">
+      <!-- partial:./partials/_navbar.html -->
+      <nav class="navbar col-lg-12 col-12 px-0 py-0 py-lg-4 d-flex flex-row">
+        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="fa fa-bars"></span>
+          </button>
+          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1 ml-4">Welcome back, Brad!</h4>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item">
+              <h4 class="mb-0 font-weight-bold d-none d-xl-block">Total Balance:₦84,943,343</h4>
+            </li>
+            <li class="nav-item nav-profile dropdown d-lg-block">
+              <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                <img class="rounded-circle" src="assets/dashboard/img/face1.jpg" alt="profile" style="width: 40px;"/>
+                <span class="nav-profile-name">Eleanor Richardson</span>
+                <i class="fa fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item">
+                  <i class="fa fa-user text-primary"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" >
+                  <i class="fa fa-sign-out-alt text-primary"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="fa fa-bars ml-2"></span>
+          </button> -->
+        </div>
+        <div class="navbar-menu-wrapper navbar-search-wrapper d-none d-lg-flex align-items-center">
+          <ul class="navbar-nav mr-lg-2">
+            <li class="nav-item nav-search d-none d-lg-block">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Here..." aria-label="search" aria-describedby="search">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="container">
+            <div class="d-flex justify-content-end mb-4">
+              <div>
+              <a href="#" class="btn bg-success text-light"> &plus; &nbsp; Invest </a>
+              </div>
+            </div>
+            <h1>Savings</h1>
+            <p>Let's help you cultivate a saving culture with different saving plans.</p>
+            <div class="row my-3 align-items-center">
+              <div class="col-xs-12 col-sm-7 ">
+                <div class="border border-secondary rounded p-3 my-1">
+                  <h4 class="mb-4">Total Balance</h4>
+                  <h1>₦0.00</h1>
+                </div>              
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="my-2">
+                  <a href="#">
+                    <img src="assets/img/complete-account-setup-img.jpg" class="img-fluid rounded">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="bg-primary p-3 rounded text-light">
+                  <h3>Piggybank</h3>
+                  <p>Strict savings automatically. Daily, weekly or Monthly. 10% p.a</p>
+                  <h5>₦0.00</h5>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="bg-info p-3 rounded text-light">
+                  <h3>Flex Naira</h3>
+                  <p>Flexible savings for emergencies. Free transfers, withdrawals etc. 8% p.a</p>
+                  <h5>₦0.00</h5>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="side-bg p-3 rounded text-light">
+                  <h3>Flex Dollar</h3>
+                  <p>Save & grow your wealth in dollars. Up to 7% p.a in dollars</p>
+                  <h5>$0.00</h5>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="bg-safelock p-3 rounded text-light">
+                  <h3>Safelock</h3>
+                  <p>Lock funds to avoid temptations. Upfront interest. Up to 13% p.a</p>
+                  <h5>₦0.00</h5>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="bg-success p-3 rounded text-light">
+                  <h3>Targets</h3>
+                  <p>Reach your unique individual saving goals. Up to 9% p.a</p>
+                  <h5>₦0.00</h5>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+                <div class="bg-pocketapp p-3 rounded text-light">
+                  <a href="#" class="h5 text-light" style="text-decoration: none;">
+                    <h3>PocketApp</h3>
+                    <p>Immediately Withdraw your savings to your pocket faster</p>
+                    <h5>Connect account</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h5 class="my-3 mt-5">Start Saving Now</h5>
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-pills d-flex align-items-center justify-content-start">
+                  <li class="my-2 active"><a data-toggle="pill" class="btn btn-piggybank btn-lg mx-2 piggybank-border-text rounded" href="#piggybank">Piggybank/core</a></li>
+                  <li class="my-2"><a data-toggle="pill" class="btn btn-flexnaira btn-lg mx-2 flexnaira-border-text rounded" href="#flexnaira">Flex Naira</a></li>
+                  <li class="my-2"><a data-toggle="pill" class="btn btn-flexdollar btn-lg mx-2 flexdollar-border-text rounded" href="#flexdollar">Flex Dollar</a></li>
+                  <li class="my-2"><a data-toggle="pill" class="btn btn-safelock btn-lg mx-2 safelock-border-text rounded" href="#safelock">Safelock</a></li>
+                  <li class="my-2"><a data-toggle="pill" class="btn btn-target btn-lg mx-2 target-border-text rounded" href="#target">Target</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="piggybank" class="tab-pane fade show active">
+                    <div class="card p-3 rounded border-0">
+                      <h3>Piggybank</h3>
+                      <div class="row my-3">
+                        <div class="col-sm-12 col-md-8">
+                          <div>
+                            <div class="card rounded">
+                              <div class="card-body">
+                                <p>My BALANCE</p>
+                                <div class="row">
+                                  <h1 class="col-md-9">₦0.00</h1>
+                                  <button class="btn btn-primary"> &plus; Quick Save</button>
+                                </div>
+                              </div>
+                              <div class="card-footer" style="padding: 0 0.95rem; background-color: transparent;">
+                                <div class="row text-center nav nav-pills">
+                                  <a href="#interest" class="col-sm-4 border p-4" data-toggle="pill" style="text-decoration: none;">
+                                    <div><i class="fa fa-percent"></i>&nbsp; <span class="text-dark ml-2">Interest</span></div>
+                                  </a>
+                                  <a href="#withdraw" class="col-sm-4 border p-4" data-toggle="pill" style="text-decoration: none;">
+                                    <div><i class="fa fa-hand-holding-usd"></i>&nbsp; <span class="text-dark ml-2">Withdraw</span></div>                                    
+                                  </a>
+                                  <a href="#settings" class="col-sm-4 border p-4" data-toggle="pill" style="text-decoration: none;">
+                                    <div><i class="fa fa-cog"></i>&nbsp; <span class="text-dark ml-2">Settings</span></div>                                    
+                                  </a>
+                                </div>
+                                <div class="tab-content">
+                                  <div id="interest" class="tab-pane fade">
+                                    <div class="row flex">
+                                      <div class="col-sm-1"></div>
+                                      <div class="col-sm-10 py-3">
+                                        <h2>Piggybank Interests Coming!</h2>
+                                        <div class="my-4"><img src="assets/img/piggybank-interest-img.png" class="img-fluid"></div>
+                                        <p>
+                                          Your interest on your Piggybank wallet will be available by the beginning of next month. Interests 
+                                          on Piggybank is currently 10% per annum and is calculated daily for every month.
+                                        </p>
+                                      </div>
+                                      <div class="col-sm-1"></div>
+                                    </div>
+                                  </div>
+                                  <div id="withdraw" class="tab-pane fade p-2 text-center text-xs-left">
+                                    <h3>Select a destination</h3>
+                                    <p>Where do you want to withdraw cash to?</p>
+                                    <div class="d-flex nav nav-pills align-items-center justify-content-between flex-wrap text-center">
+                                      <a href="#to-pocketapp" class="border py-3 px-4 my-2 rounded" data-toggle="pill" style="text-decoration: none;">
+                                        <i class="fas fa-at mb-2"></i>
+                                        <p class="text-dark">Withdraw to PocketApp</p>
+                                      </a>
+                                      <a href="#to-bank" class="border py-3 px-4 my-2 rounded" data-toggle="pill" style="text-decoration: none;">
+                                        <i class="far fa-credit-card mb-2"></i>
+                                        <p class="text-dark">Withdraw to Bank</p>                                       
+                                      </a>
+                                    </div>
+                                    <div class="tab-content text-left">
+                                      <div id="to-pocketapp" class="tab-pane fade p-3">
+                                        <h2>Create PocketApp Account</h2>
+                                        <p class="mb-5 mt-3">
+                                          PocketApp® ensures your withdrawals from Piggyvest are instant. No more late bank credits alerts.
+                                          You also get daily cash bonuses when your spend on your PocketApp®
+                                        </p>
+                                        <form action="">
+                                          <label for="id"><b>Create an PocketApp® ID (something easy to remember)</b></label>
+                                          <input type="text" class="form-control mb-2" name="username" placeholder="@username">
+
+                                          <label for="id"><b>Create a Password For your PocketApp®</b></label>
+                                          <input type="text" class="form-control mb-4" name="password" placeholder="Create a Password">
+                                          
+                                          <label for="id"><b>Confirm Password For your PocketApp®</b></label>
+                                          <input type="text" class="form-control mb-4" name="confirm_password" placeholder="Confirm password">
+
+                                          <label for="id"><b>Create a Pin For your PocketApp® (4 Digits Only)</b></label>
+                                          <input type="text" class="form-control mb-4" name="pin" placeholder="Create a pin">
+
+                                          <div class="row mb-4">
+                                            <div class="col-1">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                              </div>
+                                            </div>
+                                            <div class="col-11">
+                                              I authorize Piggypis to use my information to successfully create an account on PocketApp®
+                                            </div>
+                                          </div>
+
+                                          <label for=""><b>Please Enter Generated OTP</b></label>
+                                          <input type="text" class="form-control mb-4" name="otp" placeholder="OTP Generated">
+
+                                          <label for=""><b>For Security Reasons, Please Enter Your Piggypis Password</b></label>
+                                          <input type="text" class="form-control mb-4" name="piggy_password" placeholder="Piggypis password">
+
+                                          <div class="rounded mb-4">
+                                            <h2>What happens next?</h2>
+                                            <p>
+                                              Piggyvest securely will send your name, picture, withdrawal bank and bvn information to PocketApp® servers so your account is seemlessly created.
+                                              <br><br>
+                                              By clicking the button below you authorize Piggyvest to send this information to PocketApp®.
+                                              <br><br>
+                                              Once you are done, all you will need to do is download the "Pocket by Piggyvest app" then simply login using your phone number you set above, it is that simple.
+                                            </p>
+                                          </div>
+                                          <div class="row mt-5 mb-3">
+                                            <div class="col-12 text-center">
+                                              <input type="submit" value="CREATE & LINK POCKETAPP® ACCOUNT" name="create_pocketapp" class="btn side-bg text-light btn-lg">
+                                            </div>
+                                          </div>
+                                          
+
+                                        </form>
+                                      </div>
+                                      <div id="to-bank" class="tab-pane fade">Bank</div>
+                                    </div>
+
+                                  </div> 
+                                  <div id="settings" class="tab-pane fade">
+                                    Settings
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 bg-warning">ww</div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div id="flexnaira" class="tab-pane fade">
+                    <h3>Flex Naira</h3>
+                    <div class="d-flex align-items-start justify-content-between border border-secondary rounded p-3 my-2">
+                      <div>
+                        <div class="d-flex justify-content-start align-items-start">          
+                            <img src="assets/img/apple-touch-icon.png" style="width: 20px;" class="img-fluid mr-3  rounded-circle">                        
+                          <div>
+                            <div class="text-small">Core savings credited</div>
+                            <div class="text-small"> 2 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-small"> ₦5,000.00</div>
+                    </div>
+                  </div>
+                  <div id="flexdollar" class="tab-pane fade">
+                    <h3>Flex Dollar</h3>
+                    <div class="d-flex align-items-start justify-content-between border border-secondary rounded p-3 my-2">
+                      <div>
+                        <div class="d-flex justify-content-start align-items-start">          
+                            <img src="assets/img/apple-touch-icon.png" style="width: 20px;" class="img-fluid mr-3  rounded-circle">                        
+                          <div>
+                            <div class="text-small">Core savings credited</div>
+                            <div class="text-small"> 2 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-small"> ₦5,000.00</div>
+                    </div>
+                  </div>
+                  <div id="safelock" class="tab-pane fade">
+                    <h3>Safelock</h3>
+                    <div class="d-flex align-items-start justify-content-between border border-secondary rounded p-3 my-2">
+                      <div>
+                        <div class="d-flex justify-content-start align-items-start">          
+                            <img src="assets/img/apple-touch-icon.png" style="width: 20px;" class="img-fluid mr-3  rounded-circle">                        
+                          <div>
+                            <div class="text-small">Core savings credited</div>
+                            <div class="text-small"> 2 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-small"> ₦5,000.00</div>
+                    </div>
+                  </div>
+                  <div id="target" class="tab-pane fade">
+                    <h3>Target</h3>
+                    <div class="d-flex align-items-start justify-content-between border border-secondary rounded p-3 my-2">
+                      <div>
+                        <div class="d-flex justify-content-start align-items-start">          
+                            <img src="assets/img/apple-touch-icon.png" style="width: 20px;" class="img-fluid mr-3  rounded-circle">                        
+                          <div>
+                            <div class="text-small">Core savings credited</div>
+                            <div class="text-small"> 2 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-small"> ₦5,000.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-xs-5 my-xs-5 py-sm-1 my-sm-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- base:js -->
+  <script src="assets/dashboard/js/vendor.bundle.base.js"></script>
+  <script src="assets/dashboard/js/all.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="assets/dashboard/js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="assets/dashboard/js/off-canvas.js"></script>
+  <script src="assets/dashboard/js/hoverable-collapse.js"></script>
+  <script src="assets/dashboard/js/template.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="assets/dashboard/js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

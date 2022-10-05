@@ -44,6 +44,7 @@
 /* === Import template variables === */
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
 @-moz-keyframes flash {
   0% {
@@ -8647,6 +8648,7 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -20523,7 +20525,7 @@ dl li {
   overflow: hidden;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .sidebar .nav .sidebar-category {
@@ -21137,6 +21139,132 @@ dl li {
     text-align: left;
     padding-left: 20px;
   }
+
+ 
 }
 
+@media screen and (max-width: 991px) {
+  #sidebar-nav .nav-item a.nav-link {
+    display: flex!important;
+    flex-direction: column;
+    /* align-items: flex-end!important;
+    justify-content: flex-end!important;
+    font-size: 10px; */
+  }
+  #sidebar-nav .nav-item a.nav-link span{
+   font-size: 10px!important;
+   opacity: .6;
+  }
+  #sidebar-nav .nav-item a.nav-link svg{
+   font-size: 20px!important;
+   margin-right: 0!important;
+   opacity: .9;
+  }
+}
+
+.save-plan-link:hover{
+  text-decoration: none;
+}
+
+.side-text{
+  color: #223e9c!important;
+}
+
+.side-bg{
+  background-color: #223e9c!important;
+}
+.to-do-container{
+  display:  flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.app-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between!important;
+}
+
+.img-app-icon{
+  width: auto;
+  height: 7vh;
+}
+
+.btn-pill-link{
+ color: #ffffff!important;
+ font-weight: bold;
+}
+
+
+.btn-pill a:hover{
+  text-decoration: none;
+}
+
+.to-do-container div a:hover{
+  background: #000000!important;
+  color: #ffffff!important;
+}
+
+
+
+.bg-safelock{
+  background-color: rgb(100, 100, 255);
+}
+
+.bg-pocketapp{
+  background-color: rgb(201, 150, 254);
+}
+
+
+.piggybank-border-text{
+  border: 1px solid  #6640b2!important;
+  color: #6640b2;
+}
+.flexnaira-border-text{
+  border: 1px solid  #1cbccd!important;
+  color: #1cbccd;
+}
+.flexdollar-border-text{
+  border: 1px solid  #223e9c!important;
+  color: #223e9c;
+}
+.safelock-border-text{
+  border: 1px solid  rgb(100, 100, 255)!important;
+  color: rgb(100, 100, 255);
+}
+.target-border-text{
+  border: 1px solid  #00d082!important;
+  color: #00d082;
+}
+
+
+
+.btn-piggybank:hover{
+  background-color: #6640b2;
+  color: #ffffff;
+}
+.btn-flexnaira:hover{
+  background-color: #1cbccd!important;
+  color: #ffffff;
+}
+.btn-flexdollar:hover{
+  background-color: #223e9c!important;
+  color: #ffffff;
+}
+.btn-safelock:hover{
+  background-color: rgb(100, 100, 255)!important;
+  color: #ffffff;
+}
+.btn-target:hover{
+  background-color: #00d082!important;
+  color: #ffffff;
+}
+
+.side-border{
+  border: 1px solid  #223e9c!important;
+}
 /*# sourceMappingURL=maps/style.css.map */
